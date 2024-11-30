@@ -1,0 +1,327 @@
+        <div class="hdn hdb-s"
+            [class]="stateHdr.search ? '' : 'hdn hdb-s'">
+            <div class="hdn"
+                [class]="stateSearch.autocomplete && stateSearchAutocomplete.length > 0 && stateHdr.searchDesk ? 'pa pdd  chac-sb  tc-bd bw hbr-20 hbss lpt-25' : 'hdn'">
+                <div class="hax fs16 lmt-25 lmb-20 lpl-5 minz bw">
+                    <amp-list id="searchAutoComplete"
+                        reset-on-refresh="always" layout="fixed-height"
+                        height="50" binding="no"
+                        [src]="stateSearchAutocomplete" items=".">
+                        <template type="amp-mustache">
+                            <div id="resultAutoComplete" class="lmt-5 tc-bd autocomplete-item">
+                                <a href="#"
+                                    class="hdb lp-5 lpl-15 lpr-15 hax"
+                                    on="tap:AMP.setState({stateSearch:{lookupWord:'{{word}}' }}),AMP.navigateTo(url='{{url}}')"
+                                    data-value="{{word}}">
+                                    <span class="haxa">{{word}}</span>
+                                    {{#beta}}
+                                    <span class="hdib bvr tc-w tcu fs12 hbr-10 hv1 lpt-2 lp-10 lpt-2 lpb-2 lml-5">Beta</span>{{/beta}}
+                                </a>
+                            </div>
+                        </template>
+                    </amp-list>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- preferred data sets -->
+    <div class=" lpt-2 desktop-content">
+        <div class=" hdn hdb-m hoh chsb lpl-10 ">
+            <div amp-access="1=1">
+                <template amp-access-template type="amp-mustache">
+                {{#preferredDictionaries}}
+                    {{^selected}}
+                                            <span class="hbtn hbtn-t tb"
+                            on="tap: AMP.setState({ stateSearch: { dataset: '{{dataCode}}', dataset_text: '{{name}}', dataset_search: 'Search {{name}}', isbilang: false } }), searchword.focus"
+                            role="button"
+                            aria-label="Set dictionary search to {{name}}"
+                            tabindex="0">
+                            {{name}}
+                            <i class="hdn"
+                                [class]="stateSearch.dataset == '{{dataCode}}' ? 'i i-check ibo fs11 lml-5' : 'hdn'"
+                                aria-hidden="true"></i>
+                        </span>
+                                        {{/selected}}
+                {{/preferredDictionaries}}
+                </template>
+            </div>
+        </div>
+    </div>
+</form>
+
+              </div>
+        </div>
+        <script>
+            var lastScrollTop = 0;
+            window.addEventListener("load", function(){
+                window.addEventListener("scroll", (event) => {
+                    var top = window.pageYOffset || document.documentElement.scrollTop;
+                    if (top > lastScrollTop && top > 45) {
+                      AMP.setState({ stateHdr: { search: false, searchDesk: false } })
+                    } else if (top < lastScrollTop) {
+                      AMP.setState({ stateHdr: { search: true, searchDesk: true } })
+                    }
+                    lastScrollTop = top <= 0 ? 0 : top;
+                },false);
+            });
+        </script>
+    
+    <script type="text/javascript">
+        function stopBlur() {
+           event.preventDefault();
+           var eventId = event.target.id;
+           setTimeout(function() {
+               if(eventId == 'sidebarNavLogButton')
+                   AMP.setState({ stateSidebarNav: { userOptions: false } })
+               else
+                   AMP.setState({ stateHdr: { userOptions: false } })
+           }, 250);
+        }
+    </script>
+</header>
+
+    <div class="cc  fon" [class]="stateHdr.searchDesk ? 'cc fon' : 'cc cc-ns fon'" role="main" on="tap: AMP.setState({ stateHdr: { userOptions: false }, stateSearch: { autocomplete: false } })" aria-label="Close header popups" tabindex="0">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+                
+                
+                    
+                    
+                    
+    
+                    
+                    
+    
+
+ 
+
+    
+                                            
+
+<div class="pr cc_pgwn">
+
+    <div class="x lpl-10 lpr-10 lpt-10 lpb-25 lmax lp-m_l-20 lp-m_r-20">
+
+        <div class="hdn hdb-m hfl-m">
+                <div id='ad_leftslot' class='am-default_moreslots ltas'>
+            <script type="text/javascript">iaw.cmd.push(function() { iaw.display('ad_leftslot'); });</script>
+        </div>
+    </div>
+        <div class="hfr-m ltab lp-m_l-15">
+
+                <div class="tz0">
+                    <div id='ad_topslot' class='am-default_moreslots '>
+            <script type="text/javascript">iaw.cmd.push(function() { iaw.display('ad_topslot'); });</script>
+        </div>
+        </div>
+
+            <article id="page-content" class="hfl-s lt2b lmt-10 lmb-25 lp-s_r-20 x han tc-bd lmt-20 english-turkish" role="main" lang="en" itemscope itemtype="http://schema.org/WebPage">
+                        <div itemprop="author" itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop="name" content='Cambridge Dictionary' />
+        </div>
+                <meta itemprop="headline" content="ATTACK translate: sald&#305;r&#305;, taarruz, at&#305;lma, h&uuml;cum, birine ele&#351;tirel bir sald&#305;r&#305;, bula&#351;ma, ele&#351;tiri, n&ouml;bet, kriz, ani&hellip;. Learn more in the Cambridge English-Turkish Dictionary." />
+                <meta itemprop="copyrightHolder" content="&copy; Cambridge University Press" />
+                <meta itemprop="copyrightYear" content="2024" />
+                <meta itemprop="inLanguage" content="tr" />
+                                
+                    
+
+                                    <h1 class="ti fs fs12 lmb-0 hw superentry">Translation of <b  class='tb ttn'>attack</b> – English–Turkish dictionary</h1>
+
+                    
+                
+                <div class="page"><div class="pr dictionary" data-type="sorted" data-id="cldtr" id="dataset-cldtr" data-tab="ds-cldtr" role="tabpanel"><div class="cid" id="dataset_cldtr"></div>            <div class="pr entry-body">
+                            <div class="cid" id="cldtr"></div>                        <div class="di english-turkish" itemprop="text"><div class="di-body normal-entry-body"><span class="entry-body dentry-body"> <div class="pr entry-body__el"><div class="cid" id="cldtr-1"></div>            
+<div class="pr x lbb lb-cm">
+    <div class="hfr lpb-2">
+                    <div class="pr hdib i i-facebook lp-5 lmr-10">
+            <a class="pa p0" onclick="sendGAEvent('share_this_entry', 'facebook')" target="_blank" rel="noopener" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish-turkish%2Fattack&t=" title="Share on Facebook"></a>
+        </div>
+        <div class="pr hdib i i-x lp-5 lmr-10">
+            <a class="pa p0" onclick="sendGAEvent('share_this_entry', 'twitter')" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish-turkish%2Fattack&text=" title="Share on X"></a>
+        </div>
+        </div>
+</div>
+
+           <span class="pos-head dpos-head"><div class="pos-header dpos-h"><div class="di-title"><h2 class="headword tw-bw dhw dpos-h_hw "><span class="hw dhw">attack</span></h2></div><div class="posgram dpos-g hdib lmr-5"><div class="posgram dpos-g hdib"><span class="pos dpos" title="A word that refers to a person, place, idea, event or thing.">noun</span></div></div> <div  ></div><span class="pron-info dpron-info"><span class="uk dloc"><span class="region dreg">uk</span><span class="daud">
+                                    
+    <audio class="hdn" preload="none" id="audio1" controlsList="nodownload">
+        <div class="hdib" fallback>
+            <p>Your browser doesn't support HTML5 audio</p>
+        </div>
+        <source type="audio/mpeg" src="/media/english-turkish/uk_pron/u/uka/ukato/ukatomi017.mp3"/>
+        <source type="audio/ogg" src="/media/english-turkish/uk_pron_ogg/u/uka/ukato/ukatomi017.ogg"/>
+    </audio>
+        <div title="Listen to the British English pronunciation" class="i i-volume-up c_aud htc hdib hp hv-1 fon tcu tc-bd lmr-10 lpt-3 fs20 hv-3" onclick="audio1.load(); audio1.play();" role="button" tabindex="0"></div>
+            </span></span><span class="pron dpron">/<span class="ipa dipa">əˈtæk</span>/</span></span> <span class="pron-info dpron-info"><span class="us dloc"><span class="region dreg">us</span><span class="daud">
+                                    
+    <audio class="hdn" preload="none" id="audio2" controlsList="nodownload">
+        <div class="hdib" fallback>
+            <p>Your browser doesn't support HTML5 audio</p>
+        </div>
+        <source type="audio/mpeg" src="/media/english-turkish/us_pron/a/att/attac/attack.mp3"/>
+        <source type="audio/ogg" src="/media/english-turkish/us_pron_ogg/a/att/attac/attack.ogg"/>
+    </audio>
+        <div title="Listen to the American English pronunciation" class="i i-volume-up c_aud htc hdib hp hv-1 fon tcu tc-bd lmr-10 lpt-3 fs20 hv-3" onclick="audio2.load(); audio2.play();" role="button" tabindex="0"></div>
+            </span></span></span></div></span><div class="pos-body"><div class="sense-block pr dsense "><div class="cid" id="cldtr-1-1"></div> <h3 class="sense-head dsense_h"><span class="sense-title dsense-title"><strong class="gw">VIOLENCE</strong></span> <span class="sense-info dsense-info"><span class="gram dgram"><a href="/help/codes.html">[<span class="gcs"> <span class="gc dgc">C</span></span>, <span class="gcs"> <span class="gc dgc">U</span> </span>]</a></span></span></h3> <div class="sense-body dsense_b"><div class="def-block ddef_block " data-wl-senseid="ID_00001069_01">
+                        <div class="dwl hax">
+                            
+         
+        <a amp-access="loggedIn" amp-access-hide class="dwla wordlist-add-button" title="Add this meaning to a word list"
+                on="tap:AMP.setState({ stateGlobal: { wlSenseId: 'ID_00001069_01', wotd: '    attack
+' } }), sidebarWordList.open">
+            <span class='tb fs10 hvm'>Add to word list</span>
+            <i class="i i-list-ul" aria-hidden="true"></i>
+        </a>
+        <a amp-access="NOT loggedIn" class="dwla wordlist-add-button" title="Add this meaning to a word list"
+                on="tap:amp-access.login-sign-in">
+            <span class='tb fs10 hvm'>Add to word list</span>
+            <i class="i i-list-ul" aria-hidden="true"></i>
+        </a>
+        </div>
+                <div class="def-head ddef_h"><span class="def-info ddef-info"><span class="epp-xref dxref B1">B1</span> </span><div class="def ddef_d db">a <a class="query" href="https://dictionary.cambridge.org/dictionary/english-turkish/violent" title="violent" rel="">violent</a> <a class="query" href="https://dictionary.cambridge.org/dictionary/english-turkish/act" title="act" rel="">act</a> <a class="query" href="https://dictionary.cambridge.org/dictionary/english-turkish/intend" title="intended" rel="">intended</a> to <a class="query" href="https://dictionary.cambridge.org/dictionary/english-turkish/hurt" title="hurt" rel="">hurt</a> or <a class="query" href="https://dictionary.cambridge.org/dictionary/english-turkish/damage" title="damage" rel="">damage</a> someone or something</div> </div><div class="def-body ddef_b">   <span class="trans dtrans dtrans-se " lang="tr">
+                                    saldırı, taarruz, atılma, hücum</span>  <div class="examp dexamp"> <span class="eg deg">a <a class="query" href="https://dictionary.cambridge.org/dictionary/english-turkish/terrorist" title="terrorist" rel="">terrorist</a> <strong class="cl">attack on</strong> the <a class="query" href="https://dictionary.cambridge.org/dictionary/english-turkish/capital" title="capital" rel="">capital</a></span></div> </div></div></div></div><div class="sense-block pr dsense "><div class="cid" id="cldtr-1-2"></div> <h3 class="sense-head dsense_h"><span class="sense-title dsense-title"><strong class="gw">CRITICISM</strong></span> <span class="sense-info dsense-info"><span class="gram dgram"><a href="/help/codes.html">[<span class="gcs"> <span class="gc dgc">C</span></span>, <span class="gcs"> <span class="gc dgc">U</span> </span>]</a></span></span></h3> <div class="sense-body dsense_b"><div class="def-block ddef_block " data-wl-senseid="ID_00001069_02">
+                        <div class="dwl hax">
+I want to take only saldırı in here for instance
